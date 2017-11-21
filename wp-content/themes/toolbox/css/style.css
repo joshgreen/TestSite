@@ -1,0 +1,1008 @@
+/*!
+ * Theme Name: toolbox
+ * Theme URI: http://underscores.me/
+ * Author: Underscores.me
+ * Author URI: http://underscores.me/
+ * Description: Description
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: LICENSE
+ * Text Domain: toolbox
+ * Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ *
+ * This theme, like WordPress, is licensed under the GPL.
+ * Use it to make something cool, have fun, and share what you've learned with others.
+ *
+ * toolbox is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+ * Underscores is distributed under the terms of the GNU GPL v2 or later.
+ *
+ * Normalizing styles have been helped along thanks to the fine work of
+ * Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+ */
+/*!
+ * Normalize starts
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic);
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template, [hidden] {
+  display: none;
+}
+
+/*!
+ * Normalize ends
+ */
+/*!
+ * Mixins starts
+ */
+/* Group clearfix */
+/* Screenreader text */
+/* Vertical center */
+/* Vertical and horizontally centered */
+/* Bottom padding */
+/* List reset */
+/*!
+ * Mixins ends
+ */
+/*!
+ * Colors starts
+ */
+.color-primary {
+  color: #258139;
+}
+.color-primary a {
+  color: #258139;
+}
+.color-primary a:visited {
+  color: #258139;
+}
+.color-primary a:focus {
+  color: #258139;
+}
+.color-primary a:hover {
+  color: #258139;
+}
+.color-primary a:active {
+  color: #258139;
+}
+
+/*!
+ * Colors starts
+ */
+/*!
+ * Grid starts
+ */
+.tab {
+  padding: 12px 17px;
+}
+
+.max {
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 0;
+  position: relative;
+}
+.max:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .max {
+    max-width: 98%;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .max {
+    max-width: 95%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .max {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .max {
+    max-width: 75%;
+  }
+}
+
+.vert1 {
+  margin-top: 16vh;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .vert1 {
+    margin-top: 4vh;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .vert1 {
+    margin-top: 8vh;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .vert1 {
+    margin-top: 12vh;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .vert1 {
+    margin-top: 16vh;
+  }
+}
+
+.banner {
+  padding: 20vh 0;
+  text-align: center;
+  border: 2px dashed #404040;
+  background-color: whitesmoke;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .banner {
+    padding: 4vh 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .banner {
+    padding: 8vh 0;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .banner {
+    padding: 12vh 0;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .banner {
+    padding: 16vh 0;
+  }
+}
+
+.tp {
+  width: 50%;
+  float: left;
+  padding: 1rem 2rem;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .tp {
+    width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .tp {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+}
+
+.bm {
+  width: 50%;
+  float: right;
+  padding: 1rem 2rem;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .bm {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .bm {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+}
+
+/*!
+ * Grid starts
+ */
+/*!
+ * Typography starts
+ */
+/* Font imports */
+html {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.65em;
+}
+
+h3 {
+  font-size: 2.35em;
+}
+
+h4 {
+  font-size: 1.9em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h6 {
+  font-size: 1.25em;
+}
+
+.huge {
+  font-size: 3em;
+}
+
+/*!
+ * body,
+ * button,
+ * input,
+ * select,
+ * optgroup,
+ * textarea {
+ *   color: #404040;
+ *   font-family: sans-serif;
+ *   font-size: 16px;
+ *   font-size: 1rem;
+ *   line-height: 1.5;
+ * }
+ *
+ * h1, h2, h3, h4, h5, h6 {
+ *   clear: both;
+ * }
+ *
+ * p {
+ *   margin-bottom: 1.5em;
+ * }
+ *
+ * dfn, cite, em, i {
+ *   font-style: italic;
+ * }
+ *
+ * blockquote {
+ *   margin: 0 1.5em;
+ * }
+ *
+ * address {
+ *   margin: 0 0 1.5em;
+ * }
+ *
+ * pre {
+ *   background: #eee;
+ *   font-family: "Courier 10 Pitch", Courier, monospace;
+ *   font-size: 15px;
+ *   font-size: 0.9375rem;
+ *   line-height: 1.6;
+ *   margin-bottom: 1.6em;
+ *   max-width: 100%;
+ *   overflow: auto;
+ *   padding: 1.6em;
+ * }
+ *
+ * code, kbd, tt, var {
+ *   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+ *   font-size: 15px;
+ *   font-size: 0.9375rem;
+ * }
+ *
+ * abbr, acronym {
+ *   border-bottom: 1px dotted #666;
+ *   cursor: help;
+ * }
+ *
+ * mark, ins {
+ *   background: #fff9c0;
+ *   text-decoration: none;
+ * }
+ *
+ * big {
+ *   font-size: 125%;
+ * } */
+/*!
+ * Typography starts
+ */
+/*!
+ * Global starts
+ */
+/*!
+ * html {
+ *   box-sizing: border-box;
+ * }
+ *
+ *,
+ *:before,
+ *:after {
+ *
+ *   box-sizing: inherit;
+ * }
+ *
+ * body {
+ *   background: #fff;
+ *
+ * }
+ *
+ * hr {
+ *   background-color: #ccc;
+ *   border: 0;
+ *   height: 1px;
+ *   margin-bottom: 1.5em;
+ * }
+ *
+ * ul, ol {
+ *   margin: 0 0 1.5em 3em;
+ * }
+ *
+ * ul {
+ *   list-style: disc;
+ * }
+ *
+ * ol {
+ *   list-style: decimal;
+ * }
+ *
+ * li > ul,
+ * li > ol {
+ *   margin-bottom: 0;
+ *   margin-left: 1.5em;
+ * }
+ *
+ * dt {
+ *   font-weight: bold;
+ * }
+ *
+ * dd {
+ *   margin: 0 1.5em 1.5em;
+ * }
+ *
+ * img {
+ *   height: auto;
+ *
+ *   max-width: 100%;
+ *
+ * }
+ *
+ * figure {
+ *   margin: 1em 0;
+ *
+ *
+ * table {
+ *   margin: 0 0 1.5em;
+ *   width: 100%;
+ * }
+ *
+ * a {
+ *   color: royalblue;
+ * }
+ *
+ * a:visited {
+ *   color: purple;
+ * }
+ *
+ * a:hover, a:focus, a:active {
+ *   color: midnightblue;
+ * }
+ *
+ * a:focus {
+ *   outline: thin dotted;
+ * }
+ *
+ * a:hover, a:active {
+ *   outline: 0;
+ * } */
+/*!
+ * Global ends
+ */
+/*!
+ * Forms starts
+ */
+/*!
+ *
+ *
+ *
+ * # Forms
+ *
+ * button,
+ * input[type="button"],
+ * input[type="reset"],
+ * input[type="submit"] {
+ *   border: 1px solid;
+ *   border-color: #ccc #ccc #bbb;
+ *   border-radius: 3px;
+ *   background: #e6e6e6;
+ *   color: rgba(0, 0, 0, 0.8);
+ *   font-size: 12px;
+ *   font-size: 0.75rem;
+ *   line-height: 1;
+ *   padding: .6em 1em .4em;
+ * }
+ *
+ * button:hover,
+ * input[type="button"]:hover,
+ * input[type="reset"]:hover,
+ * input[type="submit"]:hover {
+ *   border-color: #ccc #bbb #aaa;
+ * }
+ *
+ * button:active, button:focus,
+ * input[type="button"]:active,
+ * input[type="button"]:focus,
+ * input[type="reset"]:active,
+ * input[type="reset"]:focus,
+ * input[type="submit"]:active,
+ * input[type="submit"]:focus {
+ *   border-color: #aaa #bbb #bbb;
+ * }
+ *
+ * input[type="text"],
+ * input[type="email"],
+ * input[type="url"],
+ * input[type="password"],
+ * input[type="search"],
+ * input[type="number"],
+ * input[type="tel"],
+ * input[type="range"],
+ * input[type="date"],
+ * input[type="month"],
+ * input[type="week"],
+ * input[type="time"],
+ * input[type="datetime"],
+ * input[type="datetime-local"],
+ * input[type="color"],
+ * textarea {
+ *   color: #666;
+ *   border: 1px solid #ccc;
+ *   border-radius: 3px;
+ *   padding: 3px;
+ * }
+ *
+ * input[type="text"]:focus,
+ * input[type="email"]:focus,
+ * input[type="url"]:focus,
+ * input[type="password"]:focus,
+ * input[type="search"]:focus,
+ * input[type="number"]:focus,
+ * input[type="tel"]:focus,
+ * input[type="range"]:focus,
+ * input[type="date"]:focus,
+ * input[type="month"]:focus,
+ * input[type="week"]:focus,
+ * input[type="time"]:focus,
+ * input[type="datetime"]:focus,
+ * input[type="datetime-local"]:focus,
+ * input[type="color"]:focus,
+ * textarea:focus {
+ *   color: #111;
+ * }
+ *
+ * select {
+ *   border: 1px solid #ccc;
+ * }
+ *
+ * textarea {
+ *   width: 100%;
+ * } */
+/*!
+ * Forms ends
+ */
+/*!
+ * Menu starts
+ */
+/*!
+ * .main-navigation {
+ *   clear: both;
+ *   display: block;
+ *   float: left;
+ *   width: 100%;
+ * }
+ *
+ * .main-navigation ul {
+ *   display: none;
+ *   list-style: none;
+ *   margin: 0;
+ *   padding-left: 0;
+ * }
+ *
+ * .main-navigation ul ul {
+ *   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+ *   float: left;
+ *   position: absolute;
+ *   top: 100%;
+ *   left: -999em;
+ *   z-index: 99999;
+ * }
+ *
+ * .main-navigation ul ul ul {
+ *   left: -999em;
+ *   top: 0;
+ * }
+ *
+ * .main-navigation ul ul li:hover > ul,
+ * .main-navigation ul ul li.focus > ul {
+ *   left: 100%;
+ * }
+ *
+ * .main-navigation ul ul a {
+ *   width: 200px;
+ * }
+ *
+ * .main-navigation ul li:hover > ul,
+ * .main-navigation ul li.focus > ul {
+ *   left: auto;
+ * }
+ *
+ * .main-navigation li {
+ *   float: left;
+ *   position: relative;
+ * }
+ *
+ * .main-navigation a {
+ *   display: block;
+ *   text-decoration: none;
+ * }
+ *
+ * /* Small menu.
+ * .menu-toggle,
+ * .main-navigation.toggled ul {
+ *   display: block;
+ * }
+ *
+ * @media screen and (min-width: 37.5em) {
+ *   .menu-toggle {
+ *     display: none;
+ *   }
+ *   .main-navigation ul {
+ *     display: block;
+ *   }
+ * }
+ *
+ * .site-main .comment-navigation, .site-main
+ * .posts-navigation, .site-main
+ * .post-navigation {
+ *   margin: 0 0 1.5em;
+ *   overflow: hidden;
+ * }
+ *
+ * .comment-navigation .nav-previous,
+ * .posts-navigation .nav-previous,
+ * .post-navigation .nav-previous {
+ *   float: left;
+ *   width: 50%;
+ * }
+ *
+ * .comment-navigation .nav-next,
+ * .posts-navigation .nav-next,
+ * .post-navigation .nav-next {
+ *   float: right;
+ *   text-align: right;
+ *   width: 50%;
+ * } */
+/*!
+ * Menu ends
+ */
+/*!
+ * Wordpress starts
+ */
+ *
+ * .screen-reader-text
+ *   border: 0
+ *   clip: rect(1px, 1px, 1px, 1px)
+ *   clip-path: inset(50%)
+ *   height: 1px
+ *   margin: -1px
+ *   overflow: hidden
+ *   padding: 0
+ *   position: absolute !important
+ *   width: 1px
+ *   word-wrap: normal !important
+ *
+ *   &:focus
+ *     background-color: #f1f1f1
+ *     border-radius: 3px
+ *     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6)
+ *     clip: auto !important
+ *     clip-path: none
+ *     color: #21759b
+ *     display: block
+ *     font-size: 14px
+ *     font-size: 0.875rem
+ *     font-weight: bold
+ *     height: auto
+ *     left: 5px
+ *     line-height: normal
+ *     padding: 15px 23px 14px
+ *     text-decoration: none
+ *     top: 5px
+ *     width: auto
+ *     z-index: 100000
+ *
+ * #content[tabindex="-1"]:focus
+ *   outline: 0
+ *
+ * .alignleft
+ *   display: inline
+ *   float: left
+ *   margin-right: 1.5em
+ *
+ * .alignright
+ *   display: inline
+ *   float: right
+ *   margin-left: 1.5em
+ *
+ * .aligncenter
+ *   clear: both
+ *   display: block
+ *   margin-left: auto
+ *   margin-right: auto
+ *
+ * .clear
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .entry-content
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .comment-content
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .site-header
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .site-content
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .site-footer
+ *   &:before, &:after
+ *     content: ""
+ *     display: table
+ *     table-layout: fixed
+ *
+ * .clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after
+ *   clear: both
+ *
+ * .widget
+ *   margin: 0 0 1.5em
+ *
+ *   select
+ *     max-width: 100%
+ *
+ * .sticky
+ *   display: block
+ *
+ * .hentry
+ *   margin: 0 0 1.5em
+ *
+ * .updated:not(.published)
+ *   display: none
+ *
+ * .page-content, .entry-content, .entry-summary
+ *   margin: 1.5em 0 0
+ *
+ * .page-links
+ *   clear: both
+ *   margin: 0 0 1.5em
+ *
+ * .comment-content a
+ *   word-wrap: break-word
+ *
+ * .bypostauthor
+ *   display: block
+ *
+ * .infinite-scroll
+ *   .posts-navigation, &.neverending .site-footer
+ *     display: none
+ *
+ * .infinity-end.neverending .site-footer
+ *   display: block
+ *
+ * .page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley
+ *   border: none
+ *   margin-bottom: 0
+ *   margin-top: 0
+ *   padding: 0
+ *
+ * embed, iframe, object
+ *   max-width: 100%
+ *
+ * .custom-logo-link
+ *   display: inline-block
+ *
+ * .wp-caption
+ *   margin-bottom: 1.5em
+ *   max-width: 100%
+ *
+ *   img[class*="wp-image-"]
+ *     display: block
+ *     margin-left: auto
+ *     margin-right: auto
+ *
+ *   .wp-caption-text
+ *     margin: 0.8075em 0
+ *
+ * .wp-caption-text
+ *   text-align: center
+ *
+ * .gallery
+ *   margin-bottom: 1.5em
+ *
+ * .gallery-item
+ *   display: inline-block
+ *   text-align: center
+ *   vertical-align: top
+ *   width: 100%
+ *
+ * .gallery-columns-2 .gallery-item
+ *   max-width: 50%
+ *
+ * .gallery-columns-3 .gallery-item
+ *   max-width: 33.33%
+ *
+ * .gallery-columns-4 .gallery-item
+ *   max-width: 25%
+ *
+ * .gallery-columns-5 .gallery-item
+ *   max-width: 20%
+ *
+ * .gallery-columns-6 .gallery-item
+ *   max-width: 16.66%
+ *
+ * .gallery-columns-7 .gallery-item
+ *   max-width: 14.28%
+ *
+ * .gallery-columns-8 .gallery-item
+ *   max-width: 12.5%
+ *
+ * .gallery-columns-9 .gallery-item
+ *   max-width: 11.11%
+ *
+ * .gallery-caption
+ *   display: block */
+/*!
+ * Wordpress Ends
+ */
+/*!
+ * News starts
+ */
+/*!
+ * News starts
+ */

@@ -1,0 +1,50 @@
+/*!
+  Mixins starts
+  */
+
+/* Group clearfix */
+=group
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+/* Screenreader text */
+=screenreader
+  position: absolute !important
+  top: -9999px !important
+  left: -9999px !important
+
+/* Vertical center */
+=vertical-align
+  position: absolute
+  top: 50%
+  +transform(translateY(-50%))
+
+/* Vertical and horizontally centered */
+=centered
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+/* Bottom padding */
+=b-pad
+  padding-bottom: 4rem
+  +breakpoint(xlarge)
+    padding-bottom: 4rem
+  +breakpoint(large)
+    padding-bottom: 4rem
+  +breakpoint(medium)
+    padding-bottom: 2rem
+  +breakpoint(small)
+    padding-bottom: 2rem
+
+/* List reset */
+=listreset
+  list-style: none
+  margin: 0
+  padding: 0
+/*!
+  Mixins ends
+  */
