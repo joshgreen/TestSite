@@ -71,6 +71,7 @@ gulp.task('watch', function() {
   gulp.watch(Theme+'/js/*.*', ['scripts']);
   gulp.watch(Theme+'/images/**/*.*', ['images']);
   gulp.watch(Theme+'/sass/**/*.*', ['styles']);
+  gulp.watch(Theme+'/**').on('change', livereload.changed);
 });
 
 // Default task
