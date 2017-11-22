@@ -1,3 +1,66 @@
+
+// Home Page
+.hero
+  position: relative
+  display: none
+
+.flexslider div[class^="slide"]
+  background-repeat: no-repeat
+  width: 100%
+  height: 650px
+  position: relative
+  @include breakpoint(medium)
+    height: 460px
+    z-index: 10
+    float: left
+    position: relative
+  @include breakpoint(small)
+    height: 266px
+  &::before
+    content: ""
+    width: 100%
+    height: 100%
+    display: block
+    background: rgba(58,58,58,0.55)
+    @include breakpoint(medium)
+      height: 460px
+    @include breakpoint(small)
+      height: 266px
+
+  .text-box
+    position: absolute
+    top: 20%
+    width: 60%
+    left: 10%
+    color: white
+    @include breakpoint(large)
+      top: 12%
+    @include breakpoint(medium)
+      top: 5%
+    @include breakpoint(small)
+      font-size: 0.8em
+      top: 20px
+      width: 90%
+      h1
+        font-size: 3em
+
+// .flexslider div[class$="Homeconstruction"]
+//   background: url(./images/slide-1.jpg)
+//   background-position: 63% 14%
+//   background-size: 100%
+
+// .flexslider  div[class$="Homehaulage"]
+//   background: url(./images/slide-2.jpg)
+//   background-position: 63% 14%
+//   background-size: 100%
+
+// .flexslider div[class$="Hometraining"]
+//   background: url(./images/slide-3.jpg)
+//   background-position: 63% 14%
+//   background-size: 100%
+
+
+
 /*
    * jQuery FlexSlider v2.6.0
    * http://www.woothemes.com/flexslider/
@@ -278,5 +341,6 @@ html[xmlns] .flexslider .slides
   .flex-direction-nav .flex-next
     opacity: 1
     right: 10px
+
 
 
