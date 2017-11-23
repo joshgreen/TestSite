@@ -1,7 +1,6 @@
 /*!
   Grid starts
   */
-
 =breakpoint($point)
   @if $point == xlarge
     @media (min-width: 1301px)
@@ -18,6 +17,7 @@
   @else if $point == verysmall
     @media (min-width: 20px) and (max-width: 500px)
       @content
+
 
 $pad: 10px 15px
 
@@ -61,12 +61,12 @@ $pad: 10px 15px
   @include breakpoint(large)
     margin-top: 16vh
 
-
 .banner
   +ban-pad
   text-align: center
   border: 2px dashed rgba(64,64,64,1.0)
   background-color: rgba(245,245,245,9.0)
+
 
 
 =col-full
@@ -108,7 +108,6 @@ $pad: 10px 15px
     float: none
     clear: both
 
-
 =col-1-3
   width: 33.33%
   float: left
@@ -146,7 +145,6 @@ $pad: 10px 15px
   @include breakpoint(medium)
     width: 50%
 
-
 =col-1-5
   width: 20%
   float: left
@@ -183,7 +181,6 @@ $pad: 10px 15px
     width: 33.33%
 
 
-
 =col-1-8
   width: 12.5%
   float: left
@@ -194,7 +191,6 @@ $pad: 10px 15px
     width: 50%
   @include breakpoint(medium)
     width: 25%
-
 
 =col-1-10
   width: 10%
@@ -226,10 +222,6 @@ $pad: 10px 15px
   width: 61.48445336%
   float: left
   padding: 1rem 2rem
-
-
-
-
 
 /*!
   Grid starts
