@@ -10,24 +10,17 @@
  */
 
 ?>
-
+      <div class="push"></div>
+    </div> <!-- .wrapper -->
   </div><!-- #content -->
 
-  <footer id="colophon" class="site-footer max">
+
+
+<footer id="colophon" class="site-footer max">
     <div class="site-info">
-      <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'toolbox' ) ); ?>"><?php
-        /* translators: %s: CMS name, i.e. WordPress. */
-        printf( esc_html__( 'Proudly powered by %s', 'toolbox' ), 'WordPress' );
-      ?></a>
-      <span class="sep"> | </span>
-      <?php
-        /* translators: 1: Theme name, 2: Theme author. */
-        printf( esc_html__( 'Theme: %1$s by %2$s.', 'toolbox' ), 'toolbox', '<a href="http://underscores.me/">Underscores.me</a>' );
-      ?>
+      Rhoncus aliquet est malesuada mattis maecenas ante tempor ridiculus imperdiet aptent massa nostra magna phasellus, eros netus quam senectus in molestie laoreet tellus porta dui class vivamus.
     </div><!-- .site-info -->
   </footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
 
 </body>

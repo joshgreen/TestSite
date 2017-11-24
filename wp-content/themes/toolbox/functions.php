@@ -164,3 +164,33 @@ if ( defined( 'JETPACK__VERSION' ) ) {
   require get_template_directory() . '/inc/jetpack.php';
 }
 
+////// My Function additions bellow
+
+
+
+// Remove login errors
+add_filter('login_errors', create_function('$a', "return null;"));
+
+// hide Admin bar
+show_admin_bar( false );
+
+// Remove the wordpress update notification for all users except sysadmin
+   global $user_login;
+   get_currentuserinfo();
+   if ($user_login !== "admin") { // change admin to the username that gets the updates
+    add_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+    add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
+   }
+
+// Enable GZIP output compression
+ if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))
+   add_action('wp', create_function('', '@ob_end_clean();@ini_set("zlib.output_compression", 1);'));
+
+// Change the login logo with yours
+ function my_custom_login_logo() {
+    echo '<style type="text/css">
+        h1 a { background-image:url('.get_bloginfo('template_directory').'/images/forageorporridge-login.svg) !important; }
+    </style>';
+}
+
+add_action('login_head', 'my_custom_login_logo');

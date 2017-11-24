@@ -284,7 +284,6 @@ template, [hidden] {
   margin: 0 auto;
   max-width: 75%;
   padding: 0;
-  position: relative;
 }
 .max:after {
   content: "";
@@ -546,15 +545,33 @@ h6 {
 /*!
  * Global starts
  */
-body {
-  min-height: 100%;
+html, body {
   height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -250px;
+}
+
+.site-footer, .push {
+  height: 250px;
 }
 
 .screen-reader-text {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
+}
+
+.site-content {
+  background: white;
 }
 
 /*!

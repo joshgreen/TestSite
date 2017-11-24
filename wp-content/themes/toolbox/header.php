@@ -21,70 +21,51 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-  <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toolbox' ); ?></a>
 
-  <div id="header">
-    <div class="logo">
-      <a href="#">Responsive Nav</a>
-    </div>
-    <nav id="site-navigation" class="main-navigation">
-      <form class="search" action="search.php">
-        <input name="q" placeholder="Search..." type="search">
-      </form>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-          <ul class="mega-dropdown">
-            <li class="row">
-              <ul class="mega-col">
-                <li><a href="#">About</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              <ul class="mega-col">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Services</a></li>
-              </ul>
-              <ul class="mega-col">
-                <li><a href="#">Coming Soon</a></li>
-                <li><a href="#">404 Error</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Author Page</a></li>
-              </ul>
-              <ul class="mega-col">
-                <li><a href="#">Full Width</a></li>
-                <li><a href="#">Right Column</a></li>
-                <li><a href="#">Left Column</a></li>
-                <li><a href="#">Maintenance</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="">Contact</a>
-            <ul>
-              <li><a href="#">About Version</a></li>
-              <li><a href="#">About Version</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-        </li>
-        <li>
-          <a href="">Portfolio</a>
-        </li>
-        <li>
-          <a href="">Team</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="wrapper">
+      <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toolbox' ); ?></a>
+
+      <header id="masthead" class="site-header">
+        <section class="site-topbar">
+          <div class="site-branding">
+            <?php
+            the_custom_logo();
+            if ( is_front_page() && is_home() ) : ?>
+              <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <?php else : ?>
+              <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+            <?php
+            endif;
+
+            $description = get_bloginfo( 'description', 'display' );
+            if ( $description || is_customize_preview() ) : ?>
+              <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+            <?php
+            endif; ?>
+          </div><!-- .site-branding -->
+
+          <div class="site-search">
+            <form class="search" action="search.php">
+              <input name="q" placeholder="Search..." type="search">
+            </form>
+          </div> <!-- .site-search -->
+
+        </section> <!-- .site-topbar -->
 
 
-  <div id="content" class="site-content max">
+        <section class="site-navigation">
+          <div id="header">
+            <nav>
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'menu-1',
+                  'menu_id'        => 'primary-menu',
+                ) );
+              ?>
+            </nav>
+          </div>
+        </section> <!-- .site-navigation -->
+
+      </header>
+
+      <div id="content" class="site-content max">
