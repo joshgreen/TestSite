@@ -2,14 +2,24 @@
   Menu starts
   */
 
+.site-header
+  +col-full
+  background: green
+  clear: both
+  float: left
+  +group
 
-body
-  background: #bdc3c7
-  line-height: 1.5
-  font-family: sans-serif
-  text-transform: uppercase
-  font-size: 16px
-  color: #fff
+.site-topbar
+  +col-full
+  background: red
+
+.site-branding
+  +col-2-3
+
+.site-search
+  +col-1-3
+
+
 
 a
   font-size: 16px
@@ -19,16 +29,17 @@ a
   text-decoration: none
 
 #header
+  background: #bdc3c7
+  line-height: 1.5
+  font-family: sans-serif
+  text-transform: uppercase
+  font-size: 16px
+  color: #fff
   background: #1E262D
   width: 100%
   position: relative
   z-index: 10
   line-height: 1.5
-
-  &:after
-    content: ""
-    clear: both
-    display: block
 
 .search
   float: right
@@ -48,11 +59,10 @@ input
     padding: 0 0 0 20px
     color: white
     text-decoration: none
-    +group
 
 nav
   float: right
-
+  background: #1E262D
   > ul
     float: left
     position: relative
@@ -61,7 +71,7 @@ nav
     list-style: none
     float: left
 
-  .dropdown
+  .menu-item-has-children
     position: relative
 
   li
@@ -82,7 +92,7 @@ nav
     li
       float: none
 
-  .dropdown
+  .menu-item-has-children
     ul
       position: absolute
       left: 0

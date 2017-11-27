@@ -194,3 +194,6 @@ show_admin_bar( false );
 }
 
 add_action('login_head', 'my_custom_login_logo');
+
+
+

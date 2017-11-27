@@ -10,8 +10,7 @@
  */
 
 ?>
-      <div class="push"></div>
-    </div> <!-- .wrapper -->
+
   </div><!-- #content -->
 
 

@@ -545,33 +545,10 @@ h6 {
 /*!
  * Global starts
  */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-}
-
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -250px;
-}
-
-.site-footer, .push {
-  height: 250px;
-}
-
 .screen-reader-text {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
-}
-
-.site-content {
-  background: white;
 }
 
 /*!
@@ -757,13 +734,54 @@ body {
 /*!
  * Menu starts
  */
-body {
-  background: #bdc3c7;
-  line-height: 1.5;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #fff;
+.site-header {
+  width: 100%;
+  float: left;
+  padding: 1rem 2rem;
+  transition: padding 0.4s ease-in;
+  background: green;
+  clear: both;
+  float: left;
+}
+.site-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-topbar {
+  width: 100%;
+  float: left;
+  padding: 1rem 2rem;
+  transition: padding 0.4s ease-in;
+  background: red;
+}
+
+.site-branding {
+  width: 66.66%;
+  float: left;
+  padding: 1rem 2rem;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .site-branding {
+    width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .site-branding {
+    width: 100%;
+  }
+}
+
+.site-search {
+  width: 33.33%;
+  float: left;
+  padding: 1rem 2rem;
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .site-search {
+    width: 100%;
+  }
 }
 
 a {
@@ -775,16 +793,17 @@ a {
 }
 
 #header {
+  background: #bdc3c7;
+  line-height: 1.5;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
   background: #1E262D;
   width: 100%;
   position: relative;
   z-index: 10;
   line-height: 1.5;
-}
-#header:after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .search {
@@ -808,14 +827,10 @@ input {
   color: white;
   text-decoration: none;
 }
-.logo a:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 nav {
   float: right;
+  background: #1E262D;
 }
 nav > ul {
   float: left;
@@ -825,7 +840,7 @@ nav li {
   list-style: none;
   float: left;
 }
-nav .dropdown {
+nav .menu-item-has-children {
   position: relative;
 }
 nav li a {
@@ -849,7 +864,7 @@ nav li:hover ul {
 nav li li {
   float: none;
 }
-nav .dropdown ul {
+nav .menu-item-has-children ul {
   position: absolute;
   left: 0;
   top: 100%;
@@ -857,10 +872,10 @@ nav .dropdown ul {
   padding: 20px 0;
   border-bottom: 3px solid #34495e;
 }
-nav .dropdown li {
+nav .menu-item-has-children li {
   white-space: nowrap;
 }
-nav .dropdown li a {
+nav .menu-item-has-children li a {
   padding: 10px 35px;
   font-size: 13px;
   min-width: 200px;

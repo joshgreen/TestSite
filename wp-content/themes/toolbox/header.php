@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 
-    <div class="wrapper">
+
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toolbox' ); ?></a>
 
       <header id="masthead" class="site-header">
@@ -55,14 +55,15 @@
 
         <section class="site-navigation">
           <div id="header">
-            <nav>
-              <?php
+             <nav>
+               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'menu-1',
                   'menu_id'        => 'primary-menu',
                 ) );
               ?>
             </nav>
+
           </div>
         </section> <!-- .site-navigation -->
 
