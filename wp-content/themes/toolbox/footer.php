@@ -15,7 +15,7 @@
 
 
 
-<footer id="colophon" class="site-footer max">
+  <footer id="colophon" class="site-footer max">
     <div class="site-info">
       Rhoncus aliquet est malesuada mattis maecenas ante tempor ridiculus imperdiet aptent massa nostra magna phasellus, eros netus quam senectus in molestie laoreet tellus porta dui class vivamus.
     </div><!-- .site-info -->
