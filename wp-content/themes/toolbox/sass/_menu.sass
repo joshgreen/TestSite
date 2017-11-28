@@ -3,15 +3,11 @@
   */
 
 .site-header
-  +col-full
-  background: green
-  clear: both
-  float: left
-  +group
+  +col-max
 
-.site-topbar
-  +col-full
-  background: red
+.site-topbar, .site-navigation
+  +col-max
+  +whitebg
 
 .site-branding
   +col-2-3
@@ -21,25 +17,18 @@
 
 
 
-a
-  font-size: 16px
-  display: block
-  padding: 0 0 0 20px
-  color: white
-  text-decoration: none
 
 #header
-  background: #bdc3c7
   line-height: 1.5
   font-family: sans-serif
   text-transform: uppercase
   font-size: 16px
-  color: #fff
-  background: #1E262D
+  color: rgba(255,255,255,1)
+  background: rgba(30,38,45,1)
   width: 100%
   position: relative
   z-index: 10
-  line-height: 1.5
+  +group
 
 .search
   float: right
@@ -60,12 +49,16 @@ input
     color: white
     text-decoration: none
 
+ul.menu
+  margin: 0
+
 nav
   float: right
-  background: #1E262D
+  background: rgba(30,38,45,1)
   > ul
     float: left
     position: relative
+    margin: 0
 
   li
     list-style: none
@@ -79,6 +72,8 @@ nav
       float: left
       padding: 35px
       +group
+      color: white
+      text-decoration: none
 
       &:hover
         background: #2C3E50
@@ -138,8 +133,7 @@ nav
 #menu-icon
   position: absolute
   right: 0
-  top: 50%
-  margin-top: -12px
+  top: 0
   margin-right: 30px
   display: none
 
@@ -170,7 +164,7 @@ nav
 
   #menu-icon
     display: inline
-    top: 45px
+    top: 10px
     cursor: pointer
 
     &.active
@@ -228,167 +222,6 @@ nav
   .mega-col
     width: 100%
 
-
-/*!
-  .main-navigation
-    clear: both
-    display: block
-    float: left
-    width: 100%
-
-    ul
-      display: none
-      list-style: none
-      margin: 0
-      padding-left: 0
-
-      ul
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
-        float: left
-        position: absolute
-        top: 100%
-        left: -999em
-        z-index: 99999
-
-        ul
-          left: -999em
-          top: 0
-
-        li
-          &:hover > ul, &.focus > ul
-            left: 100%
-
-        a
-          width: 200px
-
-      li
-        &:hover > ul, &.focus > ul
-          left: auto
-
-    li
-      float: left
-      position: relative
-
-    a
-      display: block
-      text-decoration: none
-
-  /* Small menu.
-
-  .menu-toggle, .main-navigation.toggled ul
-    display: block
-
-  @media screen and (min-width: 37.5em)
-    .menu-toggle
-      display: none
-
-    .main-navigation ul
-      display: block
-
-  .site-main
-    .comment-navigation, .posts-navigation, .post-navigation
-      margin: 0 0 1.5em
-      overflow: hidden
-
-  .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous
-    float: left
-    width: 50%
-
-  .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next
-    float: right
-    text-align: right
-    width: 50%
-  */
-
-/*!
-  .main-navigation {
-    clear: both;
-    display: block;
-    float: left;
-    width: 100%;
-  }
-
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
-
-  .main-navigation ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    float: left;
-    position: absolute;
-    top: 100%;
-    left: -999em;
-    z-index: 99999;
-  }
-
-  .main-navigation ul ul ul {
-    left: -999em;
-    top: 0;
-  }
-
-  .main-navigation ul ul li:hover > ul,
-  .main-navigation ul ul li.focus > ul {
-    left: 100%;
-  }
-
-  .main-navigation ul ul a {
-    width: 200px;
-  }
-
-  .main-navigation ul li:hover > ul,
-  .main-navigation ul li.focus > ul {
-    left: auto;
-  }
-
-  .main-navigation li {
-    float: left;
-    position: relative;
-  }
-
-  .main-navigation a {
-    display: block;
-    text-decoration: none;
-  }
-
-  /* Small menu.
-  .menu-toggle,
-  .main-navigation.toggled ul {
-    display: block;
-  }
-
-  @media screen and (min-width: 37.5em) {
-    .menu-toggle {
-      display: none;
-    }
-    .main-navigation ul {
-      display: block;
-    }
-  }
-
-  .site-main .comment-navigation, .site-main
-  .posts-navigation, .site-main
-  .post-navigation {
-    margin: 0 0 1.5em;
-    overflow: hidden;
-  }
-
-  .comment-navigation .nav-previous,
-  .posts-navigation .nav-previous,
-  .post-navigation .nav-previous {
-    float: left;
-    width: 50%;
-  }
-
-  .comment-navigation .nav-next,
-  .posts-navigation .nav-next,
-  .post-navigation .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
-  }
 
 /*!
   Menu ends

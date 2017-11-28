@@ -16,8 +16,9 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
-      <h1>page-homepage.php</h1>
-
+      <section class="banner">
+        <h1 class="textbanner">MARKET LEADERS IN CONSTRUCTION TRAINING</h1>
+      </section>
       <section class="hero">
         <div class="flexslider">
           <ul class="slides">

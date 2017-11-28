@@ -25,19 +25,19 @@ $pad: 10px 15px
   padding: (nth($pad, 1) + 2px) (nth($pad, 2) + 2px)
 
 =ban-pad
-  padding: 20vh 0
+  padding: 12vh 0
   @include breakpoint(verysmall)
     padding: 4vh 0
   @include breakpoint(small)
-    padding: 8vh 0
+    padding: 6vh 0
   @include breakpoint(medium)
-    padding: 12vh 0
+    padding: 8vh 0
   @include breakpoint(large)
-    padding: 16vh 0
+    padding: 10vh 0
 
 .max
   margin: 0 auto
-  max-width: 75%
+  max-width: 1400px
   padding: 0
   @include group
   @include breakpoint(verysmall)
@@ -47,7 +47,7 @@ $pad: 10px 15px
   @include breakpoint(medium)
     max-width: 90%
   @include breakpoint(large)
-    max-width: 75%
+    max-width: 90%
 
 .vert1
   margin-top: 16vh
@@ -60,13 +60,18 @@ $pad: 10px 15px
   @include breakpoint(large)
     margin-top: 16vh
 
-.banner
-  +ban-pad
-  text-align: center
-  border: 2px dashed rgba(64,64,64,1.0)
-  background-color: rgba(245,245,245,9.0)
+
+=col-max
+  width: 100%
+  float: left
+  padding: 0
 
 
+.inner
+  width: 100%
+  float: left
+  padding: 1rem 2rem
+  transition: padding 0.4s ease-in
 
 =col-full
   width: 100%
@@ -223,5 +228,5 @@ $pad: 10px 15px
   padding: 1rem 2rem
 
 /*!
-  Grid starts
+  Grid Ends
   */

@@ -16,9 +16,29 @@
 
 
   <footer id="colophon" class="site-footer max">
-    <div class="site-info">
-      Rhoncus aliquet est malesuada mattis maecenas ante tempor ridiculus imperdiet aptent massa nostra magna phasellus, eros netus quam senectus in molestie laoreet tellus porta dui class vivamus.
-    </div><!-- .site-info -->
+    <section class="site-footer-main">
+      <div class="inner">
+        <div class="f-info">
+            <h2 class="widget-title">Site</h2>
+            <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu' ) ); ?>
+        </div>
+        <div class="f-info">
+            <?php if (!dynamic_sidebar('Footer1')) :?> <?php endif;?>
+        </div>
+        <div class="f-info">
+            <?php if (!dynamic_sidebar('Footer2')) :?> <?php endif;?>
+        </div>
+        <div class="f-info">
+            <?php if (!dynamic_sidebar('Footer3')) :?> <?php endif;?>
+        </div>
+      </div> <!-- .inner -->
+
+    </section>
+    <section class="site-info">
+      <div>© 2017 - Shannon Training Limited | The Shannon Group Limited</div>
+      <div>made by <a href="https://displayblock">displayblock</a></div>
+    </section><!-- .site-info -->
+
   </footer><!-- #colophon -->
 <?php wp_footer(); ?>
 

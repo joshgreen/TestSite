@@ -45,6 +45,7 @@ if ( ! function_exists( 'toolbox_setup' ) ) :
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(
       'menu-1' => esc_html__( 'Primary', 'toolbox' ),
+      'secondary-menu' => __( 'Secondary Menu', 'toolbox' )
     ) );
 
     /*
@@ -110,6 +111,33 @@ function toolbox_widgets_init() {
     'before_title'  => '<h2 class="widget-title">',
     'after_title'   => '</h2>',
   ) );
+  register_sidebar( array(
+        'name'          => __( 'Footer1', 'toolbox' ),
+        'id'            => 'footer-text-1',
+        'description'   => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+     register_sidebar( array(
+        'name'          => __( 'Footer2', 'toolbox' ),
+        'id'            => 'footer-text-2',
+        'description'   => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+     register_sidebar( array(
+        'name'          => __( 'Footer3', 'toolbox' ),
+        'id'            => 'footer-text-3',
+        'description'   => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'toolbox_widgets_init' );
 
@@ -127,7 +155,7 @@ function toolbox_scripts() {
 
   wp_enqueue_script( 'toolbox-slider', get_template_directory_uri() . '/js/slider.js', array(jquery), '20160229', true );
 
-  wp_enqueue_script( 'toolbox-navigation', get_template_directory_uri() . '/js/mj.js', array(jquery), '20151215', true );
+  wp_enqueue_script( 'toolbox-navigation', get_template_directory_uri() . '/js/my.js', array(jquery), '20151215', true );
 
   wp_enqueue_script( 'toolbox-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

@@ -26,46 +26,52 @@
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'toolbox' ); ?></a>
 
       <header id="masthead" class="site-header">
-        <section class="site-topbar">
-          <div class="site-branding">
-            <?php
-            the_custom_logo();
-            if ( is_front_page() && is_home() ) : ?>
-              <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <?php else : ?>
-              <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-            <?php
-            endif;
-
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) : ?>
-              <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-            <?php
-            endif; ?>
-          </div><!-- .site-branding -->
-
-          <div class="site-search">
-            <form class="search" action="search.php">
-              <input name="q" placeholder="Search..." type="search">
-            </form>
-          </div> <!-- .site-search -->
-
-        </section> <!-- .site-topbar -->
+        <div class="max">
+          <section class="site-topbar">
 
 
-        <section class="site-navigation">
-          <div id="header">
-             <nav>
-               <?php
-                wp_nav_menu( array(
-                  'theme_location' => 'menu-1',
-                  'menu_id'        => 'primary-menu',
-                ) );
-              ?>
-            </nav>
+            <div class="site-branding">
+              <?php
+              the_custom_logo();
+              if ( is_front_page() && is_home() ) : ?>
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+              <?php else : ?>
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+              <?php
+              endif;
 
-          </div>
-        </section> <!-- .site-navigation -->
+              $description = get_bloginfo( 'description', 'display' );
+              if ( $description || is_customize_preview() ) : ?>
+                <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+              <?php
+              endif; ?>
+            </div><!-- .site-branding -->
+
+            <div class="site-search">
+              <form class="search" action="search.php">
+                <input name="q" placeholder="Search..." type="search">
+              </form>
+            </div> <!-- .site-search -->
+
+          </section> <!-- .site-topbar -->
+        </div> <!-- .max -->
+
+
+
+        <div class="max">
+          <section class="site-navigation">
+            <div id="header">
+               <nav>
+                 <?php
+                  wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                  ) );
+                ?>
+              </nav>
+            </div>  <!-- #header -->
+          </section> <!-- .site-navigation -->
+        </div> <!-- .max -->
 
       </header>
 

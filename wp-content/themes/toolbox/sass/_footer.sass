@@ -1,0 +1,39 @@
+/*!
+  Footer starts
+  */
+
+.site-footer-main
+  font-size: 0.65em
+  color: rgba(255,255,255,1.0)
+  +col-max
+  background-color: $footer
+
+  .widget-title
+    font-size: 1.2em
+
+  .f-info
+    +col-1-4
+    ul
+      +listreset
+    a
+      +link-colors(white,white,white,white,white)
+      text-decoration: none
+
+.site-info
+  background-color: $primary
+  +group
+  font-size: 0.7em
+  color: rgba(255,255,255,1)
+  a
+    +link-colors(white,white,white,white,white)
+
+  div
+    +col-1-2
+    text-align: left
+    &:nth-of-type(2)
+      text-align: right
+
+
+/*!
+  Footer Ends
+  */
