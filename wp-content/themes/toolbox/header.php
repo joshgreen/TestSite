@@ -48,6 +48,10 @@
             </div><!-- .site-branding -->
 
             <div class="site-search">
+              <div>
+                01895 448 111<br>
+                <a href="mailto:info@shannontraining.com">info@shannontraining.com</a>
+              </div>
               <form class="search" action="search.php">
                 <input name="q" placeholder="Search..." type="search">
               </form>

@@ -251,6 +251,11 @@ template, [hidden] {
 /*!
  * Colors starts
  */
+.greenbg {
+  background-color: #258139;
+  color: white;
+}
+
 .color-primary {
   color: #258139;
 }
@@ -427,23 +432,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2.65em;
+  font-size: 1.8em;
 }
 
 h3 {
-  font-size: 2.35em;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 h6 {
@@ -452,7 +457,7 @@ h6 {
 
 .banner {
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .textbanner {
@@ -1309,10 +1314,6 @@ embed, iframe, object {
   .flexslider div[class^="slide"] .text-box h1 {
     font-size: 3em;
   }
-}
-
-.custom-navigation {
-  position: relative;
 }
 
 /* jQuery FlexSlider v2.6.0
