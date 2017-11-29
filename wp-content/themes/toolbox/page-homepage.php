@@ -61,18 +61,27 @@ get_header(); ?>
 
 
       <div class="inner">
-        <?php
-        while ( have_posts() ) : the_post();
+        <div class="homepage-content-1">
+          <?php
+            while ( have_posts() ) : the_post();
 
-          get_template_part( 'template-parts/content', 'page' );
+              get_template_part( 'template-parts/content', 'page' );
 
-          // If comments are open or we have at least one comment, load up the comment template.
-          if ( comments_open() || get_comments_number() ) :
-            comments_template();
-          endif;
+              // If comments are open or we have at least one comment, load up the comment template.
+              if ( comments_open() || get_comments_number() ) :
+                comments_template();
+              endif;
 
-        endwhile; // End of the loop.
-        ?>
+            endwhile; // End of the loop.
+            ?>
+        </div>
+        <div class="homepage-content-2">
+          <div class="adbox">
+            <p>WITH OVER <span>20</span> YEARS EXPERIENCE IN THE CONSTRUCTION INDUSTRY</p>
+            <div>ACCREDITED BY CPCS, NPORS, CAA,
+            DRIVER CPC AND ISO 180001</div>
+          </div>
+        </div>
       </div> <!-- .inner -->
 
       <section class="banner greenbg">
