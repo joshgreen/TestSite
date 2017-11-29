@@ -2,6 +2,29 @@
   Flex starts
   */
 
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translate3d(0, 100%, 0)
+
+  to
+    opacity: 1
+    transform: none
+
+=fadeInUp
+  animation-name: fadeInUp
+
+@keyframes slideInUp
+  from
+    transform: translate3d(0, 100%, 0)
+    visibility: visible
+
+  to
+    transform: translate3d(0, 0, 0)
+
+=slideInUp
+  animation-name: slideInUp
+
 
 // Home Page
 .hero
@@ -13,6 +36,7 @@
   width: 100%
   height: 650px
   position: relative
+  background-size: cover
   @include breakpoint(medium)
     height: 460px
     z-index: 10
@@ -33,10 +57,15 @@
 
   .text-box
     position: absolute
-    top: 20%
-    width: 60%
+    top: 50%
+    width: 50%
     left: 10%
     color: white
+    font-size: 1em
+    font-weight: 700
+    background: rgba(37, 129, 57, 0.50)
+    padding: 1rem
+    +fadeInUp
     @include breakpoint(large)
       top: 12%
     @include breakpoint(medium)
@@ -47,6 +76,7 @@
       width: 90%
       h1
         font-size: 3em
+
 
 
 

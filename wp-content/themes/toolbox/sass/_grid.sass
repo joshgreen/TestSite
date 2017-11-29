@@ -41,13 +41,13 @@ $pad: 10px 15px
   padding: 0
   @include group
   @include breakpoint(verysmall)
-    max-width: 98%
+    max-width: 100%
   @include breakpoint(small)
-    max-width: 95%
+    max-width: 100%
   @include breakpoint(medium)
-    max-width: 90%
+    max-width: 96%
   @include breakpoint(large)
-    max-width: 90%
+    max-width: 95%
 
 .vert1
   margin-top: 16vh
@@ -116,6 +116,8 @@ $pad: 10px 15px
   width: 33.33%
   float: left
   padding: 1rem 2rem
+  @include breakpoint(verysmall)
+    width: 100%
   @include breakpoint(small)
     width: 100%
 

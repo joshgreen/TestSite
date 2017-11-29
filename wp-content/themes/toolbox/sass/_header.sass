@@ -1,0 +1,58 @@
+/*!
+  Header starts
+  */
+
+
+.site-header
+  +col-max
+
+.site-topbar, .site-navigation
+  +col-max
+  +whitebg
+
+.site-branding
+  +col-2-3
+  padding: 0
+
+.site-search
+  +col-1-3
+  padding: 1rem
+  font-size: 0.7em
+
+.logo
+  float: left
+  padding: 0
+  img
+    width: 100%
+    height: auto
+
+.logo
+
+
+  a
+    display: block
+    padding: 0 0 0 20px
+    color: white
+    text-decoration: none
+
+.search-contact
+  padding: 0 0.3rem 1rem 0.3rem
+  font-weight: 700
+  +primaryColor
+  text-align: right
+  @include breakpoint(verysmall)
+    text-align: left
+  @include breakpoint(small)
+    text-align: left
+
+.search
+  float: right
+  width: 100%
+  input
+    padding: 10px
+    border-radius: 20px
+    border: 1px solid $lightgrey
+    width: 100%
+/*!
+  Header ends
+  */

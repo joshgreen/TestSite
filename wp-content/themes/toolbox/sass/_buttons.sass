@@ -21,6 +21,14 @@ a[class$='green'], input[class$='green']
     background: $primary
     color: white
 
+a[class$='white'], input[class$='white']
+  +link-colors($primary, $primary, $primary, $primary, $primary)
+  background: white
+  +transition(all 0.3s ease-in-out)
+  &:hover, &:active
+    background: $primary
+    color: white
+
 
 
 

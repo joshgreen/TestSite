@@ -26,28 +26,28 @@ get_header(); ?>
               <div class="slide-1" style="background-image: url(<?php the_field('slide-image-1'); ?>)"><?php endif; ?>
                 <div class="text-box">
                   <p class="intro"><?php the_field('slide-text-1'); ?></p>
-                  <a href="<?php the_field('slide-link-1'); ?>" class="button-yellow-chevron">Contact us</a>
+                  <a href="<?php the_field('slide-link-1'); ?>" class="button-white">Contact us</a>
                 </div>
             </li>
             <li><?php if( get_field('slide-image-2') ): ?>
               <div class="slide-1" style="background-image: url(<?php the_field('slide-image-2'); ?>)"><?php endif; ?>
                 <div class="text-box">
                   <p class="intro"><?php the_field('slide-text-2'); ?></p>
-                  <a href="<?php the_field('slide-link-2'); ?>" class="button-yellow-chevron">Contact us</a>
+                  <a href="<?php the_field('slide-link-2'); ?>" class="button-white">Contact us</a>
                 </div>
             </li>
             <li><?php if( get_field('slide-image-3') ): ?>
               <div class="slide-1" style="background-image: url(<?php the_field('slide-image-3'); ?>)"><?php endif; ?>
                 <div class="text-box">
                   <p class="intro"><?php the_field('slide-text-3'); ?></p>
-                  <a href="<?php the_field('slide-link-3'); ?>" class="button-yellow-chevron">Contact us</a>
+                  <a href="<?php the_field('slide-link-3'); ?>" class="button-white">Contact us</a>
                 </div>
             </li>
             <li><?php if( get_field('slide-image-4') ): ?>
               <div class="slide-1" style="background-image: url(<?php the_field('slide-image-4'); ?>)"><?php endif; ?>
                 <div class="text-box">
                   <p class="intro"><?php the_field('slide-text-4'); ?></p>
-                  <a href="<?php the_field('slide-link-4'); ?>" class="button-yellow-chevron">Contact us</a>
+                  <a href="<?php the_field('slide-link-4'); ?>" class="button-white">Contact us</a>
                 </div>
             </li>
           </ul>
