@@ -3,8 +3,6 @@
   */
 
 
-
-
 body
   +background-image(linear-gradient(35deg, rgba(174, 213, 141, 1.0), rgba(48, 136, 65, 1.0)))
 
@@ -13,6 +11,27 @@ body
 
 .screen-reader-text
   +screenreader
+
+.banner
+  padding: 1rem
+  width: 100%
+  float: left
+  clear: both
+
+.textbanner
+  font-size: 1.65em
+  text-align: center
+  display: block
+  margin: 0
+  width: 100%
+  color: rgba(255,255,255,1.0)
+  @include breakpoint(verysmall)
+    font-size: 1em
+  @include breakpoint(small)
+    font-size: 1em
+  @include breakpoint(medium)
+    font-size: 1.3em
+
 
 .hero
   clear: both

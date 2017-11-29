@@ -497,6 +497,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
+  color: #258139;
 }
 
 h1 {
@@ -504,42 +505,23 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 h5 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 1.25em;
-}
-
-.banner {
-  position: relative;
-  padding: 2rem;
-  width: 100%;
-  float: left;
-  clear: both;
-}
-
-.textbanner {
-  font-size: 1.65em;
-  text-align: center;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  font-size: 0.9em;
 }
 
 .huge {
@@ -633,6 +615,37 @@ body {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
+}
+
+.banner {
+  padding: 1rem;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.textbanner {
+  font-size: 1.65em;
+  text-align: center;
+  display: block;
+  margin: 0;
+  width: 100%;
+  color: white;
+}
+@media (min-width: 20px) and (max-width: 500px) {
+  .textbanner {
+    font-size: 1em;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .textbanner {
+    font-size: 1em;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .textbanner {
+    font-size: 1.3em;
+  }
 }
 
 .hero {
@@ -977,13 +990,6 @@ body {
   clear: both;
 }
 
-a {
-  display: block;
-  padding: 0 0 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
 ul.menu {
   margin: 0;
 }
@@ -1004,11 +1010,21 @@ nav li {
 nav .menu-item-has-children {
   position: relative;
 }
+nav .current-menu-item {
+  -moz-box-shadow: #f0de1f 0 -4px 0 0 inset;
+  -webkit-box-shadow: #f0de1f 0 -4px 0 0 inset;
+  box-shadow: #f0de1f 0 -4px 0 0 inset;
+}
 nav li a {
+  display: block;
   float: left;
   padding: 35px;
   color: white;
   text-decoration: none;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 nav li a:after {
   content: "";

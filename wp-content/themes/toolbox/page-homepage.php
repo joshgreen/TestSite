@@ -75,6 +75,10 @@ get_header(); ?>
         ?>
       </div> <!-- .inner -->
 
+      <section class="banner greenbg">
+        <h1 class="textbanner">KEEPING YOU SAFE ON SITE - BOOK YOUR COURSE TODAY</h1>
+      </section>
+
 
 
     </main><!-- #main -->
