@@ -279,6 +279,49 @@ template, [hidden] {
  * Colors Ends
  */
 /*!
+ * Buttons starts
+ */
+a[class*='button-'], input[class*='button-'] {
+  padding: 0.5rem 0.9rem;
+  margin: 0.5rem;
+  border-radius: 0;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+}
+
+a[class$='green'], input[class$='green'] {
+  color: #258139;
+  background: white;
+  border: 2px solid #258139;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a[class$='green']:visited, input[class$='green']:visited {
+  color: #258139;
+}
+a[class$='green']:focus, input[class$='green']:focus {
+  color: #258139;
+}
+a[class$='green']:hover, input[class$='green']:hover {
+  color: #258139;
+}
+a[class$='green']:active, input[class$='green']:active {
+  color: #258139;
+}
+a[class$='green']:hover, a[class$='green']:active, input[class$='green']:hover, input[class$='green']:active {
+  background: #258139;
+  color: white;
+}
+
+/*!
+ * Buttons Ends
+ */
+/*!
  * Grid starts
  */
 .tab {
@@ -566,6 +609,16 @@ body {
 
 .hero {
   clear: both;
+}
+
+.entry-title {
+  color: #258139;
+  font-size: 1.6em;
+}
+
+.entry-content p {
+  font-size: 0.7em;
+  color: #555555;
 }
 
 /*!
@@ -948,9 +1001,12 @@ nav li li a:hover {
     display: none;
     width: 100%;
     clear: both;
-    float: none;
+    float: left;
     max-height: 400px;
     overflow-y: scroll;
+    position: absolute;
+    top: 42px;
+    left: 0;
   }
 
   #menu-icon {
@@ -992,12 +1048,17 @@ nav li li a:hover {
     display: block;
   }
 
+  #header {
+    padding: 1.5rem;
+  }
+
   #header nav ul ul {
     display: block;
     position: static;
     background: none;
     border: none;
     padding: 0;
+    z-index: 10;
   }
   #header nav a {
     color: #fff;

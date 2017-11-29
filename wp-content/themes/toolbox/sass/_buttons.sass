@@ -1,0 +1,30 @@
+/*!
+  Buttons starts
+  */
+
+a[class*='button-'], input[class*='button-']
+  padding: 0.5rem 0.9rem
+  margin: 0.5rem
+  border-radius: 0
+  font-size: 0.9em
+  font-weight: 700
+  text-decoration: none
+  display: inline-block
+  border: 0
+
+a[class$='green'], input[class$='green']
+  +link-colors($primary, $primary, $primary, $primary, $primary)
+  background: white
+  border: 2px solid $primary
+  +transition(all 0.3s ease-in-out)
+  &:hover, &:active
+    background: $primary
+    color: white
+
+
+
+
+
+/*!
+  Buttons Ends
+  */

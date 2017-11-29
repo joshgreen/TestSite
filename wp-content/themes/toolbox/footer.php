@@ -36,7 +36,7 @@
     </section>
     <section class="site-info">
       <div>© 2017 - Shannon Training Limited | The Shannon Group Limited</div>
-      <div>made by <a href="https://displayblock">displayblock</a></div>
+      <div>made by <a href="https://www.displayblock.com/">displayblock</a></div>
     </section><!-- .site-info -->
 
   </footer><!-- #colophon -->
