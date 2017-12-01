@@ -88,6 +88,43 @@ get_header(); ?>
         <h1 class="textbanner">KEEPING YOU SAFE ON SITE - BOOK YOUR COURSE TODAY</h1>
       </section>
 
+      <section class="courses-box">
+        <div class="grid">
+          <div class="cols">
+            <figure class="effect-marley">
+              <img src="<?php bloginfo('template_url'); ?>/images/11.jpg" alt="img11"/>
+              <figcaption>
+                <h2>Sweet <span>Marley</span></h2>
+                <p>Marley tried to convince her but she was not interested.</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="cols">
+            <figure class="effect-marley">
+              <img src="<?php bloginfo('template_url'); ?>/images/12.jpg" alt="img12"/>
+              <figcaption>
+                <h2>Sweet <span>Marley</span></h2>
+                <p>Marley tried to convince her but she was not interested.</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="cols">
+            <figure class="effect-marley">
+              <img src="<?php bloginfo('template_url'); ?>/images/12.jpg" alt="img12"/>
+              <figcaption>
+                <h2>Sweet <span>Marley</span></h2>
+                <p>Marley tried to convince her but she was not interested.</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+
+
+        </div>
+      </section>
+
 
 
     </main><!-- #main -->

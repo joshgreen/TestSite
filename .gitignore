@@ -25,6 +25,13 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 package-lock.json
+wp-content/plugins/breadcrumb-trail/
+wp-content/plugins/jetpack/
+wp-content/plugins/theme-customisations-master/
+wp-content/plugins/woocommerce-gateway-stripe/
+wp-content/plugins/woocommerce/
+wp-content/themes/pharmacy/
+wp-content/themes/storefront/
 
 /.htaccess
 /license.txt

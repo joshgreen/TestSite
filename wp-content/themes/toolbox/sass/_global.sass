@@ -81,6 +81,147 @@ body
   font-size: 0.7em
   color: $text
 
+
+// courses blocks //
+
+.grid
+  position: relative
+  +col-max
+  list-style: none
+  text-align: center
+  padding-left: 1rem
+
+  .cols
+    +col-1-3
+    padding: 1rem 1rem 1rem 0
+    @include breakpoint(medium)
+      width: 100%
+
+
+
+
+  figure
+    position: relative
+    overflow: hidden
+    min-width: 320px
+    max-width: 480px
+    max-height: 360px
+    padding: 0
+    background: #3085a3
+    text-align: center
+    cursor: pointer
+    margin: 0 auto
+
+
+    img
+      position: relative
+      display: block
+      min-height: 100%
+      max-width: 100%
+      opacity: 0.8
+
+    figcaption
+      padding: 2em
+      color: #fff
+      text-transform: uppercase
+      font-size: 1.25em
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+
+      &::before, &::after
+        pointer-events: none
+
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+      > a
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1000
+        text-indent: 200%
+        white-space: nowrap
+        font-size: 0
+        opacity: 0
+
+    h2
+      word-spacing: -0.15em
+      font-weight: 300
+
+      span
+        font-weight: 800
+
+      margin: 0
+
+    p
+      margin: 0
+      letter-spacing: 1px
+      font-size: 68.5%
+
+
+figure
+  &.effect-marley
+    figcaption
+      text-align: right
+
+    h2
+      position: absolute
+      right: 30px
+      left: 30px
+      padding: 10px 0
+
+    p
+      position: absolute
+      right: 30px
+      left: 30px
+      padding: 10px 0
+      bottom: 30px
+      line-height: 1.5
+      -webkit-transform: translate3d(0, 100%, 0)
+      transform: translate3d(0, 100%, 0)
+
+    h2
+      top: 30px
+      -webkit-transition: -webkit-transform 0.35s
+      transition: transform 0.35s
+      -webkit-transform: translate3d(0, 20px, 0)
+      transform: translate3d(0, 20px, 0)
+
+    &:hover h2
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
+
+    h2::after
+      position: absolute
+      top: 100%
+      left: 0
+      width: 100%
+      height: 4px
+      background: #fff
+      content: ''
+      -webkit-transform: translate3d(0, 40px, 0)
+      transform: translate3d(0, 40px, 0)
+      opacity: 0
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+      transition: opacity 0.35s, transform 0.35s
+
+    p
+      opacity: 0
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+      transition: opacity 0.35s, transform 0.35s
+
+    &:hover
+      h2::after, p
+        opacity: 1
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+
+
 /*!
   html {
     box-sizing: border-box;
